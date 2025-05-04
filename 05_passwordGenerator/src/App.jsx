@@ -114,6 +114,8 @@ return (
           </div>
         </div>
       </div>
+
+      <span>@Developed by - <b><i>Kamal Chandra</i></b></span>
     </center>
   )
 }

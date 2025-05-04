@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
 const [pass, setPass] = useState('');
-const [length,setLength] = useState(16);
+const [length,setLength] = useState(10);
 const [AllowSymbols, setSymbols] = useState(false);
 const [AllowNumbers, setNumbers] = useState(false);
 const [AllowUppercase, setUppercase] = useState(true);
@@ -71,7 +71,7 @@ return (
         <div>
           <h1 className='text-2xl font-bold text-center'>Password Generator</h1>
           <p className='text-center text-gray-600'>Generate a random password</p>
-          <input type="text" name="" id="" placeholder={pass}
+          <input type="text" name="" id="" value={pass}
           className='bg-gray-200 w-100 h-10 rounded-md mt-4 p-2 text-center'
           />
           <button className='mt-4 ml-4 bg-blue-500 text-white rounded-md p-2' onClick={handleGenerate}>Generate Password</button>

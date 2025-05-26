@@ -58,6 +58,7 @@ const handleGenerate = () => {
 //   setPass(newPassword);
 // }, [length, AllowSymbols, AllowNumbers, AllowUppercase, AllowLowercase]);
 
+
 useEffect(()=>{
   const newPassword = generator();
   setPass(newPassword);
